@@ -10,15 +10,18 @@
 		    <meta name="author" content="">
 
 
-		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		    <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
 		    <link rel="stylesheet" href="/css/ride.css">
 		    <link rel="stylesheet" href="/css/message.css">
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		<button type="button" class="btn btn-primary" onclick="requestUnicorn({'latitude':'50', 'longitude':'50'})">Primary</button>
+		<h1>BranchBack</h1>
+		<button type="button" class="btn btn-primary" onclick="requestUnicorn({'latitude':'50', 'longitude':'50'})">Ride</button>
+		<button type="button" class="btn btn-primary" onclick="retrieveProblem()">Problem</button>
 		<div id="updates"></div>
+		<div id="problems"></div>
 
 	    <script src="js/vendor/jquery-3.1.0.js"></script>
 	    <script src="js/vendor/bootstrap.min.js"></script>
@@ -27,5 +30,6 @@
 	    <script src="js/config.js"></script>
 	    <script src="js/cognito-auth.js"></script>
 	    <script src="js/branchback.js"></script>
+	    <script src="js/retrieveProblem.js"></script>
 	</body
 </html>
